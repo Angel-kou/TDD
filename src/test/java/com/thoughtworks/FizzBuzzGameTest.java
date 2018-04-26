@@ -10,7 +10,7 @@ public class FizzBuzzGameTest {
     @Test
     public void should_return_Fizz_when_have_3() {
         FizzBuzzGame fng = new FizzBuzzGame();
-        String res = fng.getSayNumber(35);
+        String res = fng.getSayNumber(13);
         assertThat(res,equalTo("Fizz"));
     }
 
