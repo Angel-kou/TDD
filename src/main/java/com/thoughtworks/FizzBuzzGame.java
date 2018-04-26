@@ -3,15 +3,13 @@ package com.thoughtworks;
 import java.util.ArrayList;
 import java.util.List;
 
-import static javafx.scene.input.KeyCode.X;
-
 
 public class FizzBuzzGame {
     private List<String> results = new ArrayList<>();
 
     public void start(int count) {
         int x = 1;
-        String say = "";
+        String say ;
         while (x <= count){
             say = getSayNumber(x);
             results.add(say);
@@ -20,7 +18,7 @@ public class FizzBuzzGame {
     }
 
     public String getSayNumber(int x) {
-        String res = "";
+        String res ;
         if(isTheNumberContainsThree(x)){
             res = "Fizz";
         }else if(isTheMultiplesofThreeAndFiveAndSeven(x)){
